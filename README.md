@@ -13,10 +13,10 @@ This script can be used with Tampermonkey to avoid the need to manually download
 ```js
 // ==UserScript==
 // @name         XH-CDN-DL
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/danielapathy/XH-Messages-Image-Scrape/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  Automatically download images
+// @author       Daniel
 // @match        https://*/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        GM_download
