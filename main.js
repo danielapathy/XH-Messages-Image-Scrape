@@ -22,7 +22,7 @@ function clear_messages() {
 }
 
 function scrollToTop() {
-    document.getElementsByClassName('message-list ps ps--theme_default ps--active-y')[0].scrollTo(0, 0);
+   document.getElementsByClassName('message-list')[0].scrollTo(0, 0);
 }
 
 function load() {
@@ -32,11 +32,24 @@ function load() {
 function check() {
     var containers = document.getElementsByClassName('thumb-container reset-cursor');
     for(var i = 0; i < containers.length; i++) {
-        var uri = between(containers[i].getAttribute('style'), "(", ")");
-        openwin(uri);
-        console.log(uri);
+        if(containers[i] != null) {
+            var uri = between(containers[i].getAttribute('style'), "(", ")");
+            openwin(uri);
+            console.log(uri);
+        }
     }
 }
 
-check();
-clear_messages();
+var speed = 700;
+setInterval(() => {
+    /* Loop through messages and open and images */
+    check();
+    /* Scroll to the top of the chat */
+    scrollToTop()
+    /* Clear previously searched messages to prevent lag */
+    /* [XH doesn't unload messages that are off-screen, removing the ones we've already searched should prevent lag] */
+    /* [This function will skip over the last message at the top of the page, XH's message loading doesn't work without at least one message] */
+    clear_messages();
+    /* Simply click the load button */
+    load();
+}, speed);
