@@ -9,8 +9,7 @@ https://user-images.githubusercontent.com/96850995/151568783-ea3cdb35-9d00-48d4-
   
 ## Tampermonkey
 
-This script can be used with tampermonkey to make it even quicker! Simply install the below script on the Tampermonkey extension and it will download all opened images on the XH CDN.
-
+This script can be used with tampermonkey to make it even quicker! Simply install this script on the Tampermonkey extension.
 ```js
 // ==UserScript==
 // @name         XH-CDN-DL
