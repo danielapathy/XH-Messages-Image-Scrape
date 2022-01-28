@@ -11,9 +11,9 @@ function clear_messages() {
         var containers = document.getElementsByClassName('message');
         for(var i = 0; i < containers.length; i++) {
             if(i == 0) {
-                console.log(containers[i]);
+                // console.log(containers[i]);
             } else {
-                console.log(containers[i].parentNode);
+                // console.log(containers[i].parentNode);
                 containers[i].parentNode.parentNode.removeChild(containers[i].parentNode);
             }
         }
@@ -35,7 +35,7 @@ function check() {
         if(containers[i] != null) {
             var uri = between(containers[i].getAttribute('style'), "(", ")");
             openwin(uri);
-            console.log(uri);
+            // console.log(uri);
         }
     }
 }
