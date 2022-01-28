@@ -32,7 +32,7 @@ function load() {
 function check() {
     var containers = document.getElementsByClassName('thumb-container reset-cursor');
     for(var i = 0; i < containers.length; i++) {
-        if(containers[i] != null) {
+        if(containers[i] != null && containers[i].getAttribute('style') != null) {
             var uri = between(containers[i].getAttribute('style'), "(", ")");
             openwin(uri);
             // console.log(uri);
