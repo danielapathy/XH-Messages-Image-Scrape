@@ -1,6 +1,7 @@
 # XH-Messages-Image-Scrape
 Efficiently searches for and opens images from XH messages
 
+# Usage
 This script is designed for **chrome**. In order for this script to run, you must set `Pop-ups and redirects` to `Allow (default)` from the settings page. The following video will show you how to enable this setting on any domain. Just follow this tutorial on the XH website.
 
 
