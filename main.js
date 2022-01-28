@@ -3,7 +3,7 @@ function between(str, start, end) {
 }
 
 function openwin(uri) {
-    window.open(uri, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+    window.open(uri, '_blank', 'location=yes,height=500,width=500,scrollbars=yes,status=yes');
 }
 
 function clear_messages() {
