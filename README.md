@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/96850995/151568783-ea3cdb35-9d00-48d4-
   
 ## Tampermonkey
 
-This script can be used with tampermonkey to make it even quicker! Simply install this script on the Tampermonkey extension.
+This script can be used with Tampermonkey to avoid the need to manually download images
 ```js
 // ==UserScript==
 // @name         XH-CDN-DL
